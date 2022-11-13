@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Interactive card details form</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="main-container">
+            <div class="bg-container"></div>
+            <div class="content">
+                <div class="inputs-container active">
+                    <form id="form" class="active">
+                        <div class="input-group" id="name-error">
+                            <label> Cardholder Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="  e.g. Jane Appleseed"
+                            />
+                        </div>
+                        <div class="input-group" id="num-error">
+                            <label> Card Number</label>
+                            <input
+                                type="text"
+                                id="card-number"
+                                placeholder="  e.g. 1234 5678 9123 0000"
+                            />
+                        </div>
+                        <div class="date-cvc">
+                            <div class="input-group" id="date-error">
+                                <label>Exp. Date (MM/YY)</label>
+                                <div class="date">
+                                    <input
+                                        type="text"
+                                        id="month"
+                                        placeholder="MM"
+                                    />
+                                    <input
+                                        type="text"
+                                        id="year"
+                                        placeholder="YY"
+                                    />
+                                </div>
+                            </div>
+                            <div class="input-group" id="cvc-error">
+                                <label> CVC</label>
+                                <input
+                                    type="text"
+                                    id="cvc"
+                                    class="cvc"
+                                    placeholder="  e.g. 123"
+                                />
+                            </div>
+                        </div>
+                        <button class="confirm" id="confirm">Confirm</button>
+                    </form>
+                </div>
+                <div class="complete-state" id="complete-state">
+                    <img
+                        src="./images//icon-complete.svg"
+                        class="complete"
+                        alt="complete icon"
+                    />
+                    <h1>Thank You</h1>
+                    <p>We've added your card details</p>
+                    <button id="continue">Continue</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card-front">
+                    <img
+                        src="./images/card-logo.svg"
+                        class="card-logo"
+                        alt=""
+                    />
+                    <h2 class="card-number" id="card-number-display">
+                        0000 0000 0000 0000
+                    </h2>
+                    <p class="card-holder" id="card-holder">Jane Appleseed</p>
+                    <p class="card-exp" id="card-exp">00/00</p>
+                </div>
+                <div class="card-back">
+                    <div class="cvc-number" id="card-cvc">000</div>
+                </div>
+            </div>
+        </main>
+
+        <!-- <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Your Name Here</a>.
+        </div> -->
+
+        <script src="index.js"></script>
+    </body>
+</html>
